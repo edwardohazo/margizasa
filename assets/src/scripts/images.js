@@ -1,13 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const currentPath = window.location.pathname;
-  if (currentPath.includes('/index') || currentPath.includes('/about')) {
-    return;
-  }
-
-  // For provitional index
-  if (currentPath.includes('/about')) {
-    return;
-  }
+  // if (currentPath.includes('/index') || currentPath.includes('/about')) {
+  //   return;
+  // }
 
   let page = 1;
   const imagesPerPage = 4; 
@@ -30,16 +25,25 @@ document.addEventListener("DOMContentLoaded", function () {
       const response = await fetch("../assets/data/images.json");
       const data = await response.json();
 
+      console.log("Images array: ",data);
+
       // Extract categories dynamically
       const categoryKeys = Object.keys(data[0]);
+      console.log("Category Keys: ",data);
+
 
       // Determine category by matching pathname dynamically
       for (const category of categoryKeys) {
+        console.log("Category: ", category);
+        console.log("Current Path: ", currentPath);
         if (currentPath.includes(category)) {
           allImages = data[0][category]; 
+          console.log("allImages in progress... ", allImages);
           break;
         }
       }
+
+      console.log("Before suposed error: ", allImages);
 
       if (allImages.length === 0) {
         console.error("No matching category found for images.", location.pathname);

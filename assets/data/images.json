@@ -1,5 +1,17 @@
 [
     {
+      "/": [
+        { "src": "../assets/public/images/photo1.jpg", "category": "maternity" },
+        { "src": "../assets/public/images/photo2.jpg", "category": "maternity" },
+        { "src": "../assets/public/images/photo3.jpg", "category": "maternity" },
+        { "src": "../assets/public/images/photo4.jpg", "category": "maternity" },
+        { "src": "../assets/public/images/photo5.jpg", "category": "maternity" },
+        { "src": "../assets/public/images/photo6.jpg", "category": "maternity" },
+        { "src": "../assets/public/images/photo7.jpg", "category": "maternity" },
+        { "src": "../assets/public/images/photo8.jpg", "category": "maternity" },
+        { "src": "../assets/public/images/photo9.jpg", "category": "maternity" },
+        { "src": "../assets/public/images/photo10.jpg", "category": "maternity" }
+      ],
       "maternity": [
         { "src": "../assets/public/images/photo1.jpg", "category": "maternity" },
         { "src": "../assets/public/images/photo2.jpg", "category": "maternity" },

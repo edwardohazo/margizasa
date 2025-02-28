@@ -1,13 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   const currentPath = window.location.pathname;
-  if (!currentPath.includes("/index")) {
-    return;
-  }
+  // if (!currentPath.includes("/")) {
+  //   return;
+  // }
 
   // Infinite Scroll for Gallery
   let categoCounter = 1;
   let category = "maternity";
-  // let categories = ['maternity', 'family', 'momyNadMe', 'newBorn', 'SixMonths', 'cakeSmash', 'birthdays']
   let page = 1;
   let imagesPerPage; // Number of images to load per scroll
   let allImages = []; // Array to store all image objects
@@ -42,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Get all image paths from images.json
   async function fetchAllImages(category) {
+
     console.log("New category", category);
 
     try {
