@@ -52,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
         case "maternity":
           allImages = data[0].maternity; // Array of objects with src and category
           allImagesMaternity = data[0].maternity;
-          galleryCategoryTitle = document.getElementById("gallery-a-maternity");
           galleryGrid = document.getElementById("gallery-grid-maternity");
           break;
         // case "birthdays":
