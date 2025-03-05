@@ -1,0 +1,34 @@
+<!-- Carousel Pop-up -->
+<div id="carousel-popup" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90">
+  <div class="relative w-full h-full flex items-center justify-center p-4">
+    <!-- Close Button -->
+    <span id="close-carousel" class="absolute top-4 right-4 text-white text-3xl cursor-pointer z-50 hover:text-gray-300">
+      &times;
+    </span>
+
+    <!-- Carousel Image Container -->
+    <div class="relative w-full h-full flex items-center justify-center">
+      <!-- Carousel Image -->
+      <img
+        id="carousel-image"
+        src=""
+        alt="Carousel Image"
+        class="max-w-full max-h-full object-contain rounded-lg shadow-lg"
+      />
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button
+      id="prev-button"
+      class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-3xl bg-opacity-50 p-3 rounded-full hover:bg-opacity-75 transition-all duration-200"
+    >
+      &#10094;
+    </button>
+    <button
+      id="next-button"
+      class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-3xl bg-opacity-50 p-3 rounded-full hover:bg-opacity-75 transition-all duration-200"
+    >
+      &#10095;
+    </button>
+  </div>
+</div>

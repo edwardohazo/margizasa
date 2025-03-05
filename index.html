@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../assets/public/css/styles.css">
+    <title>Margizasa | Photographer</title>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header id="header" class="header bg-white shadow-md fixed w-full z-50">
+        <div class="text-2xl font-bold text-gray-800 lg:hidden flex justify-center items-center">
+          <a href="index.html" class="hover:text-gray-600 transition duration-300">
+            <img src="../assets/public/images/logo.png" alt="WAGOX Logo">
+          </a>
+        </div>
+      
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      
+          <!-- Logo for Desktop -->
+          <div class="text-2xl font-bold text-black">
+            <a href="index.html" class="hover:text-gray-600 transition duration-300 hidden lg:block">
+              <img src="../assets/public/images/logo.png" alt="WAGOX Logo" class="h-20">
+            </a>
+          </div>
+      
+          <!-- Social Media Section -->
+          <div class="text-center">
+            <div class="flex justify-center space-x-6">
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/Margizasa" target="_blank" class="text-black hover:text-white transition duration-300">
+                <i class="fab fa-facebook fa-2x"></i>
+              </a>
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/margizasaphotography" target="_blank" class="text-black hover:text-white transition duration-300">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+              <!-- WhatsApp -->
+              <a href="https://wa.me/2105705590" target="_blank" class="text-black hover:text-white transition duration-300">
+                <i class="fab fa-whatsapp fa-2x"></i>
+              </a>
+              <!-- Messenger -->
+              <a href="https://m.me/Margizasa" target="_blank" class="text-black hover:text-white transition duration-300">
+                <i class="fab fa-facebook-messenger fa-2x"></i>
+              </a>
+              <!-- TikTok -->
+              <a href=" https://www.tiktok.com/@margizasaphotography" target="_blank" class="text-black hover:text-white transition duration-300">
+                <i class="fab fa-tiktok fa-2x"></i>
+              </a>
+            </div>
+          </div>
+      
+          <!-- Desktop Menu -->
+          <nav class="hidden md:flex lg:flex relative">
+
+            <!-- replacement code -->
+            <ul class="flex justify-between">
+                
+                    <li class="ml-10">
+                        <a href="index.html" class="text-gray-700 hover:text-gray-900 transition duration-300">Home</a>
+                    </li>
+                
+                    <li class="ml-10">
+                        <a href="about.html" class="text-gray-700 hover:text-gray-900 transition duration-300">About</a>
+                    </li>
+                
+            </ul>
+    
+            <div class="relative group ml-10">
+              <button id="my-work-toggle" class="text-gray-700 hover:text-gray-900 transition duration-300 focus:outline-none flex items-center">
+                My Work <i id="desktop-arrow" class="fa-solid fa-arrow-down ml-2 text-sm transition-transform duration-300"></i>
+              </button>
+              <!-- Dropdown for Desktop -->
+    
+              <div id="work-drop-down" class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 py-2 w-48 right-0">
+                <!-- replacement code -->
+                <ul>
+                    
+                        <li>
+                            <a href="maternity.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Maternity</a>
+                        </li>
+                    
+                        <li>
+                            <a href="newBorn.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">New Born</a>
+                        </li>
+                    
+                        <li>
+                            <a href="cakeSmash.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Cake Smash</a>
+                        </li>
+                    
+                        <li>
+                            <a href="sixMonths.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">6 Months</a>
+                        </li>
+                    
+                        <li>
+                            <a href="momyAndMe.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Mommy &amp; Me</a>
+                        </li>
+                    
+                        <li>
+                            <a href="birthdays.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Birthdays</a>
+                        </li>
+                    
+                        <li>
+                            <a href="family.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition duration-300">Family</a>
+                        </li>
+                    
+                </ul>
+              </div>
+            </div>
+
+          </nav>
+      
+          <!-- Mobile Menu Button -->
+          <button id="menu-toggle" class="md:hidden focus:outline-none">
+            <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+        
+      
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white shadow-lg overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+          <!-- replacement code -->
+          <ul>
+            
+                <li>
+                    <a href="index.html" class="block text-gray-700 hover:text-gray-900 transition duration-300 py-2 pl-4 hover:bg-gray-100">Home</a>
+                </li>
+            
+                <li>
+                    <a href="about.html" class="block text-gray-700 hover:text-gray-900 transition duration-300 py-2 pl-4 hover:bg-gray-100">About</a>
+                </li>
+            
+          </ul>
+    
+          <div class="relative">
+            <button id="mobile-my-work-toggle" class="w-full text-left text-gray-700 hover:text-gray-900 transition duration-300 py-2 pl-4 focus:outline-none flex items-center">
+              My Work <i id="mobile-arrow" class="fa-solid fa-arrow-down ml-2 text-sm transition-transform duration-300"></i>
+            </button>
+            <!-- Dropdown for Mobile -->
+            <div id="mobile-work-drop-down" class="hidden">
+              <!-- replacement code -->
+              <ul>
+                
+                    <li>
+                        <a href="maternity.html" class="block text-gray-700 hover:text-gray-900 transition duration-300 py-2 pl-4 hover:bg-gray-100">Maternity</a>
+                    </li>
+                
+                    <li>
+                        <a href="newBorn.html" class="block text-gray-700 hover:text-gray-900 transition duration-300 py-2 pl-4 hover:bg-gray-100">New Born</a>
+                    </li>
+                
+                    <li>
+                        <a href="cakeSmash.html" class="block text-gray-700 hover:text-gray-900 transition duration-300 py-2 pl-4 hover:bg-gray-100">Cake Smash</a>
+                    </li>
+                
+                    <li>
+                        <a href="sixMonths.html" class="block text-gray-700 hover:text-gray-900 transition duration-300 py-2 pl-4 hover:bg-gray-100">6 Months</a>
+                    </li>
+                
+                    <li>
+                        <a href="momyAndMe.html" class="block text-gray-700 hover:text-gray-900 transition duration-300 py-2 pl-4 hover:bg-gray-100">Mommy &amp; Me</a>
+                    </li>
+                
+                    <li>
+                        <a href="birthdays.html" class="block text-gray-700 hover:text-gray-900 transition duration-300 py-2 pl-4 hover:bg-gray-100">Birthdays</a>
+                    </li>
+                
+                    <li>
+                        <a href="family.html" class="block text-gray-700 hover:text-gray-900 transition duration-300 py-2 pl-4 hover:bg-gray-100">Family</a>
+                    </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+  
+    <section class="mx-auto pt-40 lg:pt-20">
+    
+    <!-- Category grids -->
+    <div class="pt-24 px-5">
+      <a href="maternity.html" id="gallery-a-maternity" class="font-bold"></a>
+    </div>
+    
+    <div id="gallery-grid-maternity" class="gallery-grid"></div>
+      
+    <!-- Carrusel pop up injected here -->
+    <div id="carousel"></div>
+
+    <div id="loader" class="text-center py-8">
+      <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-black mx-auto"></div>
+    </div>
+    
+  </section>
+
+  <!-- Categories Grid Section -->
+  <section id="cathegories-grid" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Explore Categories</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        
+          <div class="relative group h-48 rounded-lg overflow-hidden shadow-md">
+            <div
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+              style="background-image: url('../assets/public/images/photo1.jpg');"
+            ></div>            
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+              <a href="maternity.html" class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Maternity
+              </a>
+            </div>
+          </div>
+        
+          <div class="relative group h-48 rounded-lg overflow-hidden shadow-md">
+            <div
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+              style="background-image: url('../assets/public/images/photo2.jpg');"
+            ></div>            
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+              <a href="newBorn.html" class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                New Born
+              </a>
+            </div>
+          </div>
+        
+          <div class="relative group h-48 rounded-lg overflow-hidden shadow-md">
+            <div
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+              style="background-image: url('../assets/public/images/photo3.jpg');"
+            ></div>            
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+              <a href="momyAndMe.html" class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Momy &amp; Me
+              </a>
+            </div>
+          </div>
+        
+          <div class="relative group h-48 rounded-lg overflow-hidden shadow-md">
+            <div
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+              style="background-image: url('../assets/public/images/photo4.jpg');"
+            ></div>            
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+              <a href="birthdays.html" class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Birthdays
+              </a>
+            </div>
+          </div>
+        
+          <div class="relative group h-48 rounded-lg overflow-hidden shadow-md">
+            <div
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+              style="background-image: url('../assets/public/images/photo5.jpg');"
+            ></div>            
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+              <a href="sixMonths.html" class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Six Months
+              </a>
+            </div>
+          </div>
+        
+          <div class="relative group h-48 rounded-lg overflow-hidden shadow-md">
+            <div
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+              style="background-image: url('../assets/public/images/photo6.jpg');"
+            ></div>            
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+              <a href="family.html" class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Family
+              </a>
+            </div>
+          </div>
+        
+          <div class="relative group h-48 rounded-lg overflow-hidden shadow-md">
+            <div
+              class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+              style="background-image: url('../assets/public/images/photo7.jpg');"
+            ></div>            
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+              <a href="cakeSmash.html" class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Cake Smash
+              </a>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Leave a Review Button -->
+  <div class="text-center my-8">
+    <a href="https://www.google.com/search?hl=en-US&gl=us&q=MargiZaSa+Photography,+2571+Jackson+Keller+Rd,+San+Antonio,+TX+78230&ludocid=3091735099566189934&lsig=AB86z5Vmpqf9thl9FhXEWTM2cVIy#lrd=0x865c5dc6380f5811:0x2ae80cb13d3fed6e,3 " class="inline-block px-6 py-2 bg-gray-700 text-white font-medium rounded-lg hover:bg-gray-800 transition duration-300">
+      Leave a Review
+    </a>
+  </div>
+
+  <!-- Reviews Section -->
+  <div class="max-w-md mx-auto p-6 bg-white border border-gray-300 rounded-lg shadow-lg my-16">
+    
+      <div class="review text-center ">
+        <p class="font-semibold text-lg">
+          Rocio Ortega <span class="text-yellow-500">★★★★★</span>
+        </p>
+        <p class="text-gray-700 mt-2">Margi is an extraordinary photographer, she has captured so many special moments in my family for years. She is professional, personal and easy to work with. The quality of her work is top notch! The set designs she creates for the holidays are my absolute favorite they are always astonishing. Highly recommend her work, she is like no other photographer in town</p>
+      </div>
+    
+      <div class="review text-center hidden">
+        <p class="font-semibold text-lg">
+          Daniela Arias <span class="text-yellow-500">★★★★★</span>
+        </p>
+        <p class="text-gray-700 mt-2">Reached out to Margi for last minute family photos. She responded quickly and was able to fit me in. Loved our family session. Margi is very professional and knowledgeable at what she does. If you ever need family pictures I highly recommend her.</p>
+      </div>
+    
+      <div class="review text-center hidden">
+        <p class="font-semibold text-lg">
+          Briana Castillo <span class="text-yellow-500">★★★★★</span>
+        </p>
+        <p class="text-gray-700 mt-2">Margi did not disappoint!! Working with her was an absolute pleasure, made my newborn feel very at ease throughout the session and went super smoothly! So happy that the best SA photographer got to capture my baby’s early days!</p>
+      </div>
+    
+      <div class="review text-center hidden">
+        <p class="font-semibold text-lg">
+          Ruth Contreras <span class="text-yellow-500">★★★★★</span>
+        </p>
+        <p class="text-gray-700 mt-2">Margi did an outstanding job with my son and daughter in law! The pictures were beautiful and she was very professional and patient through the entire process. We will be taking additional pictures when my granddaughter arrives.  No doubt about it!</p>
+      </div>
+    
+  </div>
+
+</main>
+
+
+  <form id="form">
+    <div class="flex justify-center align-center pb-32">
+      <div class="bg-gray-100 p-8 rounded-2xl shadow-xl w-96 border border-gray-300">
+          <h2 class="text-2xl font-semibold text-center text-gray-800 mb-6">Contact Us</h2>
+          
+          <label class="block text-gray-600 font-medium">Name:</label>
+          <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 bg-white rounded-lg focus:ring-2 focus:ring-gray-400 focus:outline-none transition-all text-gray-900">
+          <span class="text-red-500 text-sm"></span>
+          
+          <label class="block mt-4 text-gray-600 font-medium">Telephone:</label>
+          <input type="text" id="telephone" name="telephone" class="w-full p-3 border border-gray-300 bg-white rounded-lg focus:ring-2 focus:ring-gray-400 focus:outline-none transition-all text-gray-900">
+          <span class="text-red-500 text-sm"></span>
+          
+          <label class="block mt-4 text-gray-600 font-medium">Email:</label>
+          <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 bg-white rounded-lg focus:ring-2 focus:ring-gray-400 focus:outline-none transition-all text-gray-900">
+          <span class="text-red-500 text-sm"></span>
+          
+          <label class="block mt-4 text-gray-600 font-medium">Message:</label>
+          <textarea id="message" name="message" class="w-full p-3 border border-gray-300 bg-white rounded-lg h-24 resize-none focus:ring-2 focus:ring-gray-400 focus:outline-none transition-all text-gray-900"></textarea>
+          <span class="text-red-500 text-sm"></span>
+          
+          <button type="submit" class="mt-6 w-full bg-gray-800 text-white p-3 rounded-lg hover:bg-gray-700 transition-all shadow-md">Submit</button>
+      </div>
+    </div>
+  </form>
+  
+
+  <!-- Footer Content -->
+  <footer class="shadow-md mt-16 bg-gray-800 text-white">
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        
+        <!-- Quick Links -->
+        <div class="text-center md:text-left">
+          <ul class="flex flex-wrap justify-center md:justify-start gap-4">
+            
+              <li>
+                <a href="about.html" class="text-gray-400 hover:text-white transition duration-300">
+                  About Me
+                </a>
+              </li>
+            
+              <li>
+                <a href="maternity.html" class="text-gray-400 hover:text-white transition duration-300">
+                  Maternity
+                </a>
+              </li>
+            
+              <li>
+                <a href="newBorn.html" class="text-gray-400 hover:text-white transition duration-300">
+                  Newborn
+                </a>
+              </li>
+            
+              <li>
+                <a href="cakeSmash.html" class="text-gray-400 hover:text-white transition duration-300">
+                  Cake Smash
+                </a>
+              </li>
+            
+              <li>
+                <a href="sixMonths.html" class="text-gray-400 hover:text-white transition duration-300">
+                  6 Months
+                </a>
+              </li>
+            
+              <li>
+                <a href="momyAndMe.html" class="text-gray-400 hover:text-white transition duration-300">
+                  Mommy &amp; Me
+                </a>
+              </li>
+            
+              <li>
+                <a href="birthdays.html" class="text-gray-400 hover:text-white transition duration-300">
+                  Birthdays
+                </a>
+              </li>
+            
+              <li>
+                <a href="family.html" class="text-gray-400 hover:text-white transition duration-300">
+                  Family
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+  
+        <!-- Contact Info -->
+        <div class="text-center mb-6 md:mb-0">
+          <h3 class="text-gray-400 font-bold mb-2">Studio Location</h3>
+          <p class="text-gray-400 mb-2">2571 Jackson Keller Rd, San Antonio, TX 78230</p>
+          <p class="text-gray-400 mb-2">
+            Phone: <a href="tel:8183918506" class="hover:text-white transition duration-300">
+              8183918506
+            </a>
+          </p>
+          <p class="text-gray-400">
+            Email: <a href="mailto:info@margizasa.com" class="hover:text-white transition duration-300">
+              info@margizasa.com
+            </a>
+          </p>
+        </div>
+  
+        <!-- Social Media Section -->
+        <div class="mb-8 text-center">
+          <div class="flex justify-center space-x-6">
+            
+              <a href="https://www.facebook.com/Margizasa" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                <i class="fab fa-facebook fa-2x"></i>
+              </a>
+            
+              <a href="https://www.instagram.com/margizasaphotography" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+            
+              <a href="https://wa.me/yourphonenumber" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                <i class="fab fa-whatsapp fa-2x"></i>
+              </a>
+            
+              <a href="https://m.me/Margizasa" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                <i class="fab fa-facebook-messenger fa-2x"></i>
+              </a>
+            
+              <a href="https://www.tiktok.com/@margizasaphotography" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                <i class="fab fa-tiktok fa-2x"></i>
+              </a>
+            
+          </div>
+        </div>
+  
+        <!-- Copyright Notice -->
+        <div class="text-center md:text-left">
+          <p class="text-gray-400 text-sm">
+            &copy; 2025 Margizasa Photography. All rights reserved.
+          </p>
+        </div>
+  
+      </div>
+    </div>
+  </footer>
+  
+
+  <!-- Javascript -->
+  <script src="assets/src/scripts/helper/toTopAlways.js"></script>
+  <script src="assets/src/scripts/formValidations.js"></script>
+  <script src="assets/src/scripts/images.js"></script>
+  <script src="assets/src/scripts/imagesIndex.js"></script>
+  <script src="assets/src/scripts/loadComponents.js"></script>
+  <script src="assets/src/scripts/headerDynamics.js"></script>
+  <script src="assets/src/scripts/scripts.js"></script>
+</body>
+</html>
