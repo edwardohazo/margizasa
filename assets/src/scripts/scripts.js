@@ -1,14 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const currentPath = window.location.pathname;
-
     // Prevent image downloads right click
     document.addEventListener('contextmenu', function (e) {
         if (e.target.tagName === 'IMG') {
           e.preventDefault();
         }
     });      
-    console.log("INDEX:", 11111);
+
     // Reviews functionality
     let index = 0;
     function showNextReview() {

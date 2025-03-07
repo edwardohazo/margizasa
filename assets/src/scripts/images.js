@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // }
 
   let page = 1;
-  const imagesPerPage = 4; 
+  const imagesPerPage = 6; 
   let allImages = [];
   let isLoading = false;
 
